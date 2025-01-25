@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project Overview
+
+This repository contains a Next.js application that demonstrates various features and components, including text animations, audio playback, and cookie handling.
+
+## Features
+
+- **Text Animations**: Utilizes the `DecryptedText` component to create animated text effects on hover or when in view.
+- **Audio Playback**: Plays audio files on specific user interactions.
+- **Cookie Handling**: Sets cookies using API routes and handles user navigation based on cookie values.
+
+## Components
+
+- **DecryptedText**: A component that animates text with customizable speed, characters, and animation triggers.
+- **TextAnim**: A component that showcases different examples of the `DecryptedText` component.
+- **HackerText**: A component that displays animated text lines using the `DecryptedText` component and `framer-motion` for animations.
+- **HomeServer**: A server-side component that conditionally includes client-side components.
+
+## API Routes
+
+- **Set-Cookie**: An API route that sets a cookie named `hasVisited` with a max age of 200 seconds.
+
+## Usage
+
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Run the development server using `npm run dev`.
+4. Open your browser and navigate to `http://localhost:3000` to see the application in action.
+
+## File Structure
+
+- `src/app/components/`: Contains various React components used in the application.
+- `src/app/welcome/`: Contains the main welcome page component.
+- `src/app/api/set-cookie/`: Contains the API route for setting cookies.
+- `DecryptedText/`: Contains the `DecryptedText` component.
 
 ## Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To get started with this project, follow the usage instructions above. Explore the different components and API routes to understand how they work and how they are integrated into the application.
